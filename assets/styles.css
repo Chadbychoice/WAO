@@ -195,8 +195,9 @@ button { cursor: pointer; }
 .btn svg { width: 18px; height: 18px; flex: 0 0 auto; }
 
 .hero {
-  min-height: 760px;
-  height: min(920px, 100svh);
+  min-height: min(920px, 100svh);
+  height: auto;
+  padding-top: calc(var(--header) + 36px);
   display: grid;
   align-items: end;
   position: relative;
@@ -408,7 +409,7 @@ button { cursor: pointer; }
   .section { padding: 82px 0; }
   .brand-copy { display: none; }
   .btn--nav { display: none; }
-  .hero { min-height: 720px; height: 90svh; }
+  .hero { min-height: min(720px, 90svh); height: auto; }
   .hero__media::after { background: linear-gradient(0deg, rgba(3,21,40,.96) 0%, rgba(3,21,40,.68) 58%, rgba(3,21,40,.2) 100%); }
   .hero__inner { padding-bottom: 66px; }
   .hero h1 { max-width: 650px; }

@@ -122,7 +122,17 @@ button { cursor: pointer; }
 }
 .header-inner { height: 100%; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
 .brand { display: inline-flex; align-items: center; gap: 12px; flex-shrink: 0; }
-.brand img { width: 58px; height: 58px; object-fit: contain; transition: width .25s, height .25s; }
+.brand img {
+  width: 58px;
+  height: 58px;
+  padding: 4px;
+  border: 1px solid rgba(4,26,49,.12);
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 6px 20px rgba(4,26,49,.2);
+  object-fit: contain;
+  transition: width .25s, height .25s;
+}
 .site-header.is-scrolled .brand img { width: 48px; height: 48px; }
 .brand-copy { display: grid; line-height: 1.05; }
 .brand-copy strong { color: #fff; font-size: .95rem; letter-spacing: .03em; }
@@ -159,6 +169,7 @@ button { cursor: pointer; }
 .menu-toggle { display: none; width: 44px; height: 44px; border: 0; border-radius: 50%; background: rgba(255,255,255,.13); color: #fff; }
 .site-header.is-scrolled .menu-toggle { background: var(--surface-2); color: var(--navy-950); }
 .menu-toggle svg { width: 22px; height: 22px; }
+.mobile-nav { display: none; }
 
 .btn {
   display: inline-flex;
